@@ -1,0 +1,20 @@
+# include<stdio.h>
+float x = 4,5;
+double y;
+
+int fib(int n){
+	if(n==0){
+	return  0;
+	}
+		else if(n==1){
+		return  1;
+		}
+			else {
+			return fib(n-1)+fib(n-2);
+			}
+}
+
+int main (void){
+int  n = 7;
+print f("Die %d. Fibonacci-Zahl lautet: %d/n", n, fib(n);
+}
