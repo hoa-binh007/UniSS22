@@ -2,6 +2,7 @@
 #include <stdio.h>
 #define P() ({ int status = sem_wait(&((*rezept[i]).sem)); if(status) {printf("Fehler\n"); exit(-1); } else { printf("[BT %d] %d-te Zutat aus Rezept holen.\n", my_num, i); }})
 #define V() ({ int status = sem_post(&((*rezept[i]).sem)); if(status) {printf("Fehler\n"); exit(-1); } else { printf("[BT %d] %d-te Zutat aus Rezept wegstellen.\n", my_num, i); }})
+#define DRINKMISCHEN() (sleep(rezept[i] -> time_needed))
 
 #include "vorgabe.h"
 
@@ -19,7 +20,7 @@ void *work(void *arg){
 		//eine Spirittuose aus dem Regal holen also semaphore ausführen
 		for(int i=0; i<RECIPE_SIZE;i++){
 			P();
-			sleep(1);
+			DRINKMISCHEN();
 		}
 		
 		//Alle Zutaten ins Regal stellen

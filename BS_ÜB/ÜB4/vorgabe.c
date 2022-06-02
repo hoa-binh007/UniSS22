@@ -9,10 +9,6 @@
 #include <unistd.h>
 
 #include "vorgabe.h"
-#include "a3_a.c"
-#include "a3_c.c"
-		//   | zu d aendern.
-
 pthread_mutex_t lock;
 int restart;
 pthread_t bartenders[BARTENDER_NUM];
@@ -28,7 +24,7 @@ ingredient_t ingredients[INGREDIENTS_NUM] = {
 /// Funktion, die ein zufälliges Rezept generiert und  
 /// im als Argument angegebenen Array speichert
 /// (d.h. von euch mit der richtigen Länge anzulegenden!)
-void get_recipe(ingredient_t* recipe_buffer[]) {   //**ein Zeiger auf ein Feld von Zutaten
+void get_recipe(ingredient_t * recipe_buffer[]) {
 	
 	ingredient_t *ingredients_left[INGREDIENTS_NUM];
 
@@ -97,4 +93,3 @@ int main() {
 
 	return 0;
 }
-

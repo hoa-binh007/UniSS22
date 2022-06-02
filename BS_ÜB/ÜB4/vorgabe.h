@@ -10,7 +10,7 @@
 	#define BARTENDER_NUM 6				/// Anzahl der Bartender.
 	#define RECIPES_PER_BARTENDER 2		/// Anzahl der Rezeptkreationen, die ein Bartender mischt, bevor er sich beendet.
 	#define RECIPE_SIZE 4				/// Anzahl der Spirituosen einer Rezeptkreation.
-//eingene Datentyp wird gebaut, struktur besteht aus 4 Attributen, aus Struktur wird einen datentyp gemacht schreibt man typedef struct davor und am Ende wird der Name neu deklariert
+
 	typedef struct ingredient {			/// Definiere Struktur für Spirituose mit "ingredient_t" als Alias.
 		char name[256];					/// Der Name dieser Spirituosen.
 		int time_needed;				/// Die Zeit in Sekunden, die zur Verarbeitung dieser Spirituosen benötigt wird.
@@ -40,4 +40,3 @@
 	void *work(void *arg);
 
 #endif
-
