@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Time
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=hours\ minutes
+comment2.target=int\ toSeconds(int,\ int)
+comment3.params=sek
+comment3.target=java.lang.String\ showTime(int)
+numComments=4
