@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Summe
+comment1.params=a\ b
+comment1.target=int\ intervall(int,\ int)
+comment2.params=x
+comment2.target=int\ digitSum(int)
+comment3.params=z1
+comment3.target=java.lang.String\ digitToString(int)
+comment4.params=z
+comment4.target=java.lang.String\ intToString(int)
+comment5.params=x
+comment5.target=java.lang.String\ digitSumToString(int)
+comment6.params=z
+comment6.target=boolean\ isHarshad(int)
+comment7.params=n
+comment7.target=void\ computeHarshads(int)
+comment8.params=n
+comment8.target=double\ computeEuler(int)
+numComments=9
