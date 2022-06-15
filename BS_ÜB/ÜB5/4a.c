@@ -7,7 +7,7 @@ void buddy_free(void *addr) {
 	if(addr == NULL ){				//Fehlerbehandlung
 		return;
 	}
-		while(addr!=node_start_addr(node)){
+		while(addr>=0){
 			if(node == NULL){
 				exit(255);
 			}
